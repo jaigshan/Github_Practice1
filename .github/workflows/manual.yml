@@ -36,9 +36,6 @@ jobs:
       with:
         eslint: true
         prettier: true
-   
-  test:
-    runs-on: ubuntu-latest
-    steps:
+
     - name: Run Test Cases
       run: npm test
