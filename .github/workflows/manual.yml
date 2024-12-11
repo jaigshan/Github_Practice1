@@ -27,3 +27,9 @@ jobs:
 
     - name: Install NodeJS Dependencies
       run: npm ci
+
+    - name: Run Linters
+      uses: wearerequired/lint-action@v2
+      with:
+        eslint: true
+        prettier: true
