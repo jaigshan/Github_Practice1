@@ -37,7 +37,7 @@ jobs:
         eslint: true
         prettier: true
    
-   test:
+  test:
     runs-on: ubuntu-latest
     steps:
     - name: Run Test Cases
