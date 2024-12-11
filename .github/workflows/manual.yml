@@ -24,7 +24,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 14
-
+      
     - name: Install NodeJS Dependencies
       run: npm ci
 
@@ -36,3 +36,9 @@ jobs:
       with:
         eslint: true
         prettier: true
+   
+   test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run Test Cases
+      run: npm test
