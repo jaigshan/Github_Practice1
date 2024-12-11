@@ -28,6 +28,9 @@ jobs:
     - name: Install NodeJS Dependencies
       run: npm ci
 
+    - name: Install Prettier
+      run: npm install --save-dev --save-exact prettier
+      
     - name: Run Linters
       uses: wearerequired/lint-action@v2
       with:
